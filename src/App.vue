@@ -2,7 +2,6 @@
   <div id="app">
     <header>
       <div class="logo">Kim Dyla</div>
-
       <Social />
     </header>
 
