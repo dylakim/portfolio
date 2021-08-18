@@ -5,8 +5,7 @@
                 <h1>Front End Web Developer</h1>
                 <p><font-awesome-icon :icon="faMapMarkerAlt" /> Troy, MI or Remote</p>
                 <p>I am a Senior Interface Developer at Merkle. I use technologies like HTML, SCSS, JavaScript, and Vue.js to build fully responsive and accessible websites.</p>
-
-                <Social />
+                <p>I have a reputation for being an avid note-taker which allows me to be a well organized, quick learning, and detail oriented developer. I really enjoy working in a team setting where I can both learn from and provide guidence to my peers. I have great time management skills, both at a personal and professional level, and I'm always looking for ways to improve myself, my code, core code, and both my own and my team's processes.</p>
             </div>
         </div>
 
@@ -46,8 +45,6 @@
                 </ul>
             </section>
         </div>
-
-        <p class="learn-more">Learn more on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a></p>
     </section>
 </template>
 
@@ -59,13 +56,7 @@
         faTools,
     } from '@fortawesome/free-solid-svg-icons';
 
-    import Social from './Social';
-
     export default {
-        components: {
-            Social,
-        },
-
         data (){
             return {
                 faCode,
@@ -82,7 +73,7 @@
     margin-bottom: calcRems(40px);
 
     @include bp(desktop) {
-        margin-bottom: calcRems(50px);
+        margin-bottom: calcRems(100px);
     }
 
     .description {
@@ -95,7 +86,7 @@
 
         & > div {
             margin: auto;
-            max-width: calcRems(650px);
+            max-width: calcRems(765px);
         }
 
         .fa-map-marker-alt {
