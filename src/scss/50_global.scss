@@ -13,6 +13,10 @@ body {
 }
 
 header {
+    align-items: center;
+    background: $colorPurpleDk;
+    display: flex;
+    justify-content: space-between;
     padding: calcRems(15px) calcRems(40px);
 
     .github-banner {
@@ -49,7 +53,7 @@ header {
 }
 
 .logo {
-    color: $colorPurpleDk;
+    color: $colorWhite;
     font-family: $robotFont;
     font-size: calcRems(48px);
     font-weight: $thinWeight;
@@ -82,10 +86,10 @@ h2 {
 p { 
     font-size: calcRems(20px);
     font-weight: 300;
+    line-height: 1.5;
     padding: 0 0 calcRems(20px);
     
     @include bp(desktop) {
-        font-size: calcRems(18px);
         padding: 0 0 calcRems(25px);
     }
 }

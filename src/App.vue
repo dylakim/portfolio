@@ -2,38 +2,24 @@
   <div id="app">
     <header>
       <div class="logo">Kim Dyla</div>
-      <a
-        href="https://github.com/dylakim"
-        class="github-banner"
-        title="View on GitHub"
-        target="_blank"
-      >
-        <GitHubBanner />
-      </a>
+
+      <Social />
     </header>
 
     <main>
-      <About />
-      <Projects />
-      <Clients />
+      <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
-import About from './components/About';
-import Clients from './components/Clients';
-import GitHubBanner from './components/svg/GitHubBanner';
-import Projects from './components/Projects';
+import Social from './components/Social';
 
 export default {
   name: 'App',
 
   components: {
-    About,
-    Clients,
-    GitHubBanner,
-    Projects,
-  }
+    Social,
+  },
 }
 </script>

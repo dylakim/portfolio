@@ -1,18 +1,30 @@
-[
-    {
+{
+    "dyla-home-page": {
+        "name": "Dyla Home Page",
+        "url": "https://dyla.dev/",
+        "image": "dyla_home_page.png",
+        "altText": "Dyla home page screenshot",
+        "headline": "Dyla Home Page"
+    },
+    "chobani-rewards-2021": {
         "name": "Choabni Rewards",
         "url": "https://www.chobanirewards.com/",
         "image": "chobani_rewards2021.jpg",
         "altText": "Chobani Rewards website screenshot",
-        "headline": "Chobani Rewards",
-        "body": "<p>Project Description</p><p>Multiple paragraphs describing the project. Long line testing. Multiple paragraphs describing the project. Long line testing.</p>"
+        "headline": "Chobani Rewards"
     },
-    {
+    "sony-perfect-pair": {
         "name": "The Perfect Pair",
         "url": "https://sonyrewards.promo.eprize.com/theperfectpair/",
         "image": "sonyrewards_theperfectpair.jpg",
         "altText": "Sony Rewards: The Perfect Pair website screenshot",
-        "headline": "Sony Rewards: The Perfect Pair",
-        "body": "<p>Project Description</p><p>Multiple paragraphs describing the project</p>"
+        "headline": "Sony Rewards: The Perfect Pair"
+    },
+    "togetherness-games": {
+        "name": "Nabisco Togetherness Games",
+        "url": "http://togethernessgames.com",
+        "image": "mondelez_togethernessgames.png",
+        "altText": "Togetherness Games website screenshot",
+        "headline": "Nabisco Togetherness Games"
     }
-]
+}

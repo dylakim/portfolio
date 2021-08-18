@@ -1,27 +1,29 @@
 <template>
-    <section class="project">
-        <img
-            :src="require(`@/assets/projects/${imageFileName}`)"
-            :alt="imageAlt"
-            class="project__preview"
-        >
-
-        <div class="project__details">
-            <div>
-                <h2><slot name="headline" /></h2>
-                <div><slot name="body" /></div>
-            </div>
-
-            <a
-                v-if="projectUrl"
-                :href="projectUrl"
-                class="check-it-out"
-                target="_blank"
-            >
-                View {{ projectName }} <font-awesome-icon :icon="faAngleRight" />
-            </a>
+    <!-- <router-link
+        :to="`/project/${projectId}`"
+        class="project"
+    > -->
+    <a
+        :href="details.url"
+        target="_blank"
+        class="project"
+    >
+        <div class="project__preview">
+            <img
+                :src="require(`@/assets/projects/${details.image}`)"
+                :alt="details.altText"
+            />
         </div>
-    </section>
+        <section>
+
+            <div class="project__details">
+                <div>
+                    <h2><slot name="headline" /></h2>
+                </div>
+            </div>
+        </section>
+    </a>
+    <!-- </router-link> -->
 </template>
 
 <script>
@@ -29,24 +31,13 @@
 
     export default {
         props: {
-            projectUrl: {
-                default: null,
-                required: false,
-                type: String,
-            },
-            imageFileName: {
+            projectId: {
                 required: true,
                 type: String,
             },
-            imageAlt: {
-                default: '',
-                required: false,
-                type: String,
-            },
-            projectName: {
-                default: '',
-                required: false,
-                type: String,
+            details: {
+                required: true,
+                type: Object,
             },
         },
 
@@ -60,70 +51,41 @@
 
 <style lang="scss">
 .project {
-    border: 1px solid $colorPurpleDk;
-    border-radius: calcRems(15px);
-    @include boxShadow();
-    box-sizing: border-box;
-    margin: 0 calcRems(40px) calcRems(40px);
-    padding: calcRems(40px);
-    position: relative;
-    
-    @include bp(desktop) {
-        align-items: center;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin: 0 0 calcRems(40px);
+    display: block;
+    flex-basis: 48%;
+    margin-bottom: calcRems(80px);
+    text-decoration: none;
+
+    &:last-of-type {
+        align-self: center;
     }
 
     &__preview {
         @include boxShadow();
-        border-radius: calcRems(10px);
+        border-radius: calcRems(3px);
         margin-bottom: calcRems(30px);
+        overflow: hidden;
         width: 100%;
 
         @include bp(desktop) {
             flex-shrink: 1;
+            height: calcRems(500px);
             margin: 0;
-            width: 48%;
+        }
+
+        img {
+            display: block;
+            width: 100%;
         }
         
     }
 
     &__details {
-        width: 100%;
-        
-        @include bp(desktop) {
-            align-self: stretch;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: left;
-            width: 48%;
-        }
+        margin-top: calcRems(20px);
 
         h2 {
-            font-size: calcRems(22px);
-
-            @include bp(desktop) {
-                font-size: calcRems(24px);
-                padding-bottom: calcRems(30px);
-            }
-        }
-        
-        p {
-            font-size: calcRems(16px);
-            font-weight: $lightWeight;
-
-            @include bp(desktop) {
-                font-size: calcRems(18px);
-            }
-
-            &:last-of-type {
-                padding-bottom: calcRems(40px);
-            }
+            background: white;
         }
     }
-
 }
 </style>

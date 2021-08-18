@@ -1,7 +1,7 @@
 <template>
     <section class="clients">
         <h1>Clients</h1>
-        <p>I've had the pleasure of working with many different brands over the last 6 years. Here are just a few.</p>
+        <p>I've had the pleasure of working with many different brands over the last 6+ years. These are just a few.</p>
 
         <div class="clients__logos">
             <Client
@@ -52,11 +52,10 @@
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: calcRems(20px) 0;
         
         @include bp(desktop) {
-            justify-content: space-around;
             margin: calcRems(40px) 0;
         }
     }
