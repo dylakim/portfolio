@@ -1,24 +1,23 @@
-# portfolio
+# My Portfolio
+## Description
 
-## Project setup
-```
-npm install
-```
+Welcome! The purpose of this portfolio website is to give an overview of who I am as a web developer and to demonstrate some of my abilities.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+_Due to the nature of promotional advertising, the websites I build are short-lived. At this time, all of my projects are currently expired so I am unable to provide any live examples of work. I apologize for the inconvenience. I wish there was more to see here...🙃. Please consider this website and [dyla.dev](http://dyla.dev) small examples of what I am capable of._
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[kim.dyla.dev](http://kim.dyla.dev "My portfolio site")
+## Technologies Used
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Figma
+- Firebase
+- FontAwesome
+- Git
+- JSON
+- NPM
+- SCSS
+- VSCode
+- Vue.js
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Get In Touch
+LinkedIn: [linkedin.com/in/dylakim/](https://www.linkedin.com/in/dylakim/ "Kim Dyla's LinkedIn profile")
