@@ -4,8 +4,8 @@
             <div>
                 <h1>Front End Web Developer</h1>
                 <p><font-awesome-icon :icon="faMapMarkerAlt" /> Troy, MI or Remote</p>
-                <p>I am a Senior Interface Developer at Merkle. I use technologies like HTML, SCSS, JavaScript, and Vue.js to build fully responsive and accessible websites.</p>
-                <p>I have a reputation for being an avid note-taker which allows me to be a well organized, quick learning, and detail oriented developer. I really enjoy working in a team setting where I can both learn from and provide guidence to my peers. I have great time management skills, both at a personal and professional level, and I'm always looking for ways to improve myself, my code, core code, and both my own and my team's processes.</p>
+                <p>I am a Senior Interface Developer at Merkle. I use technologies such as HTML, SCSS, JavaScript, and Vue.js to build fully responsive and accessible promotional websites.</p>
+                <p>I am a well organized, quick learning, and detail oriented developer. Documentation and note taking is very important to me. I have great time management skills and I'm always looking for ways to improve myself, my skills, and my processes. I enjoy working in a setting where I can both learn from and provide guidence to my teammates.</p>
             </div>
         </div>
 
