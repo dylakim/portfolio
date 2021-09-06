@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Altria Group",
+        "image": "altria.png"
+    },
+    {
+        "name": "Mondelez International",
+        "image": "mondelez.png"
+    },
+    {
+        "name": "Sony",
+        "image": "sony.svg"
+    },
+    {
+        "name": "Samsung",
+        "image": "samsung.svg"
+    },
+    {
+        "name": "Dunkin'",
+        "image": "dunkin.jpg"
+    },
+    {
+        "name": "Chobani",
+        "image": "chobani.svg"
+    },
+    {
+        "name": "Wyndham Hotels and Resorts",
+        "image": "wyndham.png"
+    }
+]

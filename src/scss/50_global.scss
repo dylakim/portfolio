@@ -1,0 +1,140 @@
+html,
+body {
+    font-family: $montserratFont;
+    font-size: 2.5vw;
+    
+    @media (min-width: 767px) {
+        font-size: 1.482vw;
+    }
+
+    @media (min-width: 1080px) {
+        font-size: 16px;
+    }
+}
+
+header {
+    align-items: center;
+    background: $colorPurpleDk;
+    display: flex;
+    justify-content: space-between;
+    padding: calcRems(15px) calcRems(40px);
+
+    .github-banner {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &:focus {
+            .octo-bkgd {
+                fill: $colorPurpleLt;
+            }
+        }
+    }
+
+    svg {
+        width: calcRems(88px);
+        
+        .octo-arm,
+        .octo-body {
+            fill: $colorWhite;
+        }
+        
+        .octo-bkgd {
+            fill: $colorPurpleDk;
+            transition: fill 500ms ease;
+        }
+        
+        &:hover {
+            .octo-bkgd {
+                fill: $colorPurpleLt;
+            }
+        }
+    }
+}
+
+.logo {
+    color: $colorWhite;
+    font-family: $robotFont;
+    font-size: calcRems(48px);
+    font-weight: $thinWeight;
+}
+
+h1 {
+    color: $colorPurpleDk;
+    font-family: $robotSlabFont;
+    font-size: calcRems(36px);
+    padding: 0 0 calcRems(30px);
+    
+    @include bp(desktop) {
+        font-size: calcRems(32px);
+        padding: 0 0 calcRems(35px);
+    }
+}
+
+h2 {
+    color: $colorPurpleDk;
+    font-size: calcRems(22px);
+    font-weight: $mediumWeight;
+    padding: 0 0 calcRems(15px);
+    
+    @include bp(desktop) {
+        font-size: calcRems(24px);
+        padding: 0 0 calcRems(40px);
+    }
+}
+
+p { 
+    font-size: calcRems(20px);
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0 0 calcRems(20px);
+    
+    @include bp(desktop) {
+        padding: 0 0 calcRems(25px);
+    }
+}
+
+a {
+    color: $colorPurpleDk;
+    font-weight: $boldWeight;
+    // transition: color 500ms ease;
+
+    &.light {
+        &,
+        &:visited {
+            color: $colorWhite;
+        }
+
+        &:hover,
+        &:focus {
+            color: $colorPurpleLt;
+        }
+
+        &:focus {
+            outline: 1px solid $colorPurpleLt;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: calcRems(16px);
+    font-weight: $extraLightWeight;
+    padding: 0 0 calcRems(12px);
+    
+    @include bp(desktop) {
+        font-size: calcRems(18px);
+        padding: 0 0 calcRems(15px);
+    }
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+main {
+    text-align: center;
+}
