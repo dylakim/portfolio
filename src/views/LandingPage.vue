@@ -1,23 +1,23 @@
 <template>
   <div>
-    <About />
+    <AboutMe />
     <!-- <Projects /> -->
-    <Clients />
-    <Footer />
+    <ClientsList />
+    <TheFooter />
   </div>
 </template>
 
 <script>
-  import About from '../components/About';
-  import Clients from '../components/Clients';
-  import Footer from '../components/Footer';
+  import AboutMe from '../components/AboutMe';
+  import ClientsList from '../components/ClientsList';
+  import TheFooter from '../components/TheFooter';
   // import Projects from '../components/Projects';
 
   export default {
     components: {
-      About,
-      Clients,
-      Footer,
+      AboutMe,
+      ClientsList,
+      TheFooter,
       // Projects,
     },
   }

@@ -1,9 +1,9 @@
-import VueRouter from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import LandingPage from '../views/LandingPage.vue';
 import ProjectPage from '../views/ProjectPage.vue';
 
-export default new VueRouter({
-    mode: 'history',
+export default createRouter({
+    history: createWebHistory(),
     routes: [
         {
             path: '/',
@@ -14,10 +14,10 @@ export default new VueRouter({
             component: ProjectPage,
             props: true,
         },
-        {
-            path: '*',
-            redirect: '/',
-            component: LandingPage,
-        }
+        // {
+        //     path: '*',
+        //     redirect: '/',
+        //     component: LandingPage,
+        // }
     ]
 });

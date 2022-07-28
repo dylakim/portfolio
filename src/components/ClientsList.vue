@@ -4,7 +4,7 @@
         <p>I've had the pleasure of working with many different brands over the last 6+ years. These are just a few.</p>
 
         <div class="clients__logos">
-            <Client
+            <ClientLogo
                 v-for="client in clients"
                 :key="client.name"
                 :imageFileName="client.image"
@@ -17,11 +17,11 @@
 
 <script>
     import clients from '../data/clients.json';
-    import Client from './Client';
+    import ClientLogo from './ClientLogo';
 
     export default {
         components: {
-            Client,
+            ClientLogo,
         },
 
         data () {
