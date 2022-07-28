@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <div class="logo">Kim Dyla</div>
-      <Social />
+      <SocialLinks />
     </header>
 
     <main>
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import Social from './components/Social';
+import SocialLinks from './components/SocialLinks';
 
 export default {
   name: 'App',
 
   components: {
-    Social,
+    SocialLinks,
   },
 }
 </script>
