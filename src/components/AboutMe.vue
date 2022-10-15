@@ -4,10 +4,15 @@
             <div>
                 <h1>Front End Web Developer</h1>
                 <p><font-awesome-icon :icon="faMapMarkerAlt" /> Troy, MI or Remote</p>
-                <p>I am a Senior Interface Developer and Platform Tech Lead at Merkle where I have built many responsive, 
-                accessible, and engaging promotional sites over the last 7 years. I am interested in opportunities where I can 
-                build and maintain reusable, scalable applications that make other developer's lives easier. If you would like to chat with me, 
-                get in touch over on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a>!</p>
+                <p>I am a Senior Interface Developer and Platform Tech Lead at Merkle where I have built 
+                many responsive and accessible promotional sites over the last 7 years.</p>
+                
+                <p>I'm now looking for my next challenge. I have a strong interest in building and maintaining reusable 
+                and scalable applications, like component libraries, for example. Once I started building components, 
+                I was hooked. I loved the idea that I could build something once and use it in many different applications. 
+                This actually perfectly highlights a couple of my personality traits: highly organized, focused on 
+                efficiency, and trying my best to make others lives easier (and mine 😜). If you would like to learn 
+                more about me, get in touch over on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a>!</p>
             </div>
         </div>
 
