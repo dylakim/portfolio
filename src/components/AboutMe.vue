@@ -4,20 +4,22 @@
             <div>
                 <h1>Front End Web Developer</h1>
                 <p><font-awesome-icon :icon="faMapMarkerAlt" /> Troy, MI or Remote</p>
-                <p>I am a Senior Interface Developer at Merkle. I use technologies such as HTML, SCSS, JavaScript, and Vue.js to build fully responsive and accessible promotional websites.</p>
-                <p>I am a well organized, quick learning, and detail oriented developer. Documentation and note taking is very important to me. I have great time management skills and I'm always looking for ways to improve myself, my skills, and my processes. I enjoy working in a setting where I can both learn from and provide guidence to my teammates.</p>
+                <p>I am a Senior Interface Developer and Platform Tech Lead at Merkle where I have built many responsive, 
+                accessible, and engaging promotional sites over the last 7 years. I am interested in opportunities where I can 
+                build and maintain reusable, scalable applications that make other developer's lives easier. If you would like to chat with me, 
+                get in touch over on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a>!</p>
             </div>
         </div>
 
         <div id="skills">
             <section>
                 <font-awesome-icon :icon="faCode" />
-                <h2>Languages</h2>
+                <h2>Toolkit</h2>
                 <ul>
+                    <li>Vue.js</li>
                     <li>Javascript</li>
                     <li>HTML</li>
                     <li>CSS/SCSS</li>
-                    <li>Vue.js</li>
                 </ul>
             </section>
 
@@ -80,7 +82,7 @@
         background: $colorPurpleDk;
         padding: calcRems(60px) calcRems(80px) calcRems(140px);
 
-        h1, p {
+        h1, p, a {
             color: $colorWhite;
         }
 
