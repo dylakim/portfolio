@@ -63,7 +63,7 @@
     },
     "dyla-home-page": {
         "altText": "Dyla home page screenshot",
-        "body": "Both my husband and I have subdomains on dyla.com. We needed a site at the domain because that'd be super weird if you went to dyla.com from kim.dyla.com and nothing was there. So, I built a little splash page that highlights some of our favorite things. There are pictures from our favorite vacations and a rotating random cockatil picker. Some cool ideas we have for the future are a family Strava stats display, since we're both pretty active, or a feed of our untapped beer rankings (although, that would mean would actually have to remember to use it 😄).",
+        "body": "Both my husband and I have subdomains on dyla.com. We needed a site at the domain because that'd be super weird if you went to dyla.com from kim.dyla.com and nothing was there. So, I built a little splash page that highlights some of our favorite things. There are pictures from our favorite vacations and a rotating random cocktail picker. Some cool ideas we have for the future are a family Strava stats display, since we're both pretty active, or a feed of our untapped beer rankings (although, that would mean we would actually have to remember to use it 😄).",
         "externalLinks": [
             {
                 "label": "dyla.dev",
