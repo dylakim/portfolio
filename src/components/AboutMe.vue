@@ -3,23 +3,19 @@
         <div class="description">
             <div>
                 <h1>Front End Web Developer</h1>
-                <p><font-awesome-icon :icon="faMapMarkerAlt" /> Troy, MI or Remote</p>
-                <p>I am a Senior Interface Developer and Platform Tech Lead at Merkle where I have built 
-                many responsive and accessible promotional sites over the last 7 years.</p>
+
+                <p>I am a Senior Interface Developer and Platform Tech Lead at Merkle where I have built many responsive and accessible promotional sites at a rapid pace over the last 7 years.</p>
                 
-                <p>I'm now looking for my next challenge. I have a strong interest in building and maintaining reusable 
-                and scalable applications, like component libraries, for example. Once I started building components, 
-                I was hooked. I loved the idea that I could build something once and use it in many different applications. 
-                This actually perfectly highlights a couple of my personality traits: highly organized, focused on 
-                efficiency, and trying my best to make others lives easier (and mine 😜). If you would like to learn 
-                more about me, get in touch over on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a>!</p>
+                <p>Now I'm looking for my next challenge. I would love an opportunity to work with a product where, with modern frontend technology, I can build and maintain reusable and scalable components or applications. I love building something once and using it anywhere which is no surprise considering my organized mind, focus on efficiency, and priority to make others lives easier (and mine 😜).</p>
+
+                <p>If you would like to connect, get in touch over on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a>!</p>
             </div>
         </div>
 
         <div id="skills">
             <section>
                 <font-awesome-icon :icon="faCode" />
-                <h2>Toolkit</h2>
+                <h2>Technology</h2>
                 <ul>
                     <li>Vue.js</li>
                     <li>Javascript</li>
@@ -93,7 +89,7 @@
 
         & > div {
             margin: auto;
-            max-width: calcRems(765px);
+            max-width: calcRems(720px);
         }
 
         .fa-map-marker-alt {
@@ -134,6 +130,10 @@
                     flex-basis: 100%;
                     margin-top: calcRems(20px);
                 }
+            }
+
+            h2 {
+                @extend h3;
             }
 
             svg {

@@ -1,7 +1,7 @@
 <template>
     <section class="clients">
-        <h1>Clients</h1>
-        <p>I've had the pleasure of working with many different brands over the last 6+ years. These are just a few.</p>
+        <h2>Clients</h2>
+        <p>I've had the pleasure of working with many different brands over the last 7+ years. These are just a few.</p>
 
         <div class="clients__logos">
             <ClientLogo
@@ -44,7 +44,9 @@
 
     p {
         @include bp(desktop) {
-            padding: 0 calcRems(200px) 0;
+            padding: 0;
+            margin: auto;
+            max-width: calcRems(720px);
         }
     }
 

@@ -57,7 +57,7 @@ header {
     font-weight: $thinWeight;
 }
 
-h1 {
+h1, h2 {
     color: $colorPurpleDk;
     font-family: $robotSlabFont;
     font-size: calcRems(36px);
@@ -69,7 +69,7 @@ h1 {
     }
 }
 
-h2 {
+h3 {
     color: $colorPurpleDk;
     font-size: calcRems(22px);
     font-weight: $mediumWeight;
@@ -135,4 +135,21 @@ li {
 
 main {
     text-align: center;
+}
+
+
+
+
+
+// Transitions
+.fade-enter-from {
+    opacity: 0;
+}
+
+.fade-enter-to {
+    opacity: 1;
+}
+
+.fade-enter-active {
+    transition: opacity 1s ease;
 }
