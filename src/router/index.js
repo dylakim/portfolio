@@ -5,15 +5,17 @@ import ProjectPage from '../views/ProjectPage.vue';
 export default createRouter({
     history: createWebHistory(),
     scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) {
-            return savedPosition;
-        } else {
-            return { top: 0 };
-        }
+        const timeoutDuration = savedPosition ? 380 : 350;
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(savedPosition || { top: 0 });
+            }, timeoutDuration)
+        });
     },
     routes: [
         {
             path: '/',
+            name: 'landing',
             component: LandingPage,
         },
         {
@@ -21,10 +23,9 @@ export default createRouter({
             component: ProjectPage,
             props: true,
         },
-        // {
-        //     path: '*',
-        //     redirect: '/',
-        //     component: LandingPage,
-        // }
+        {
+            path: '/:pathMatch(.*)*',
+            redirect: '/',
+        }
     ]
 });

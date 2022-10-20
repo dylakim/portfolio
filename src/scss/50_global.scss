@@ -71,23 +71,24 @@ h1, h2 {
 
 h3 {
     color: $colorPurpleDk;
-    font-size: calcRems(22px);
+    font-size: calcRems(30px);
     font-weight: $mediumWeight;
     padding: 0 0 calcRems(15px);
     
     @include bp(desktop) {
-        font-size: calcRems(24px);
+        font-size: calcRems(22px);
         padding: 0 0 calcRems(40px);
     }
 }
 
 p { 
-    font-size: calcRems(20px);
+    font-size: calcRems(22px);
     font-weight: 300;
     line-height: 1.5;
-    padding: 0 0 calcRems(20px);
+    padding: 0 0 calcRems(40px);
     
     @include bp(desktop) {
+        font-size: calcRems(18px);
         padding: 0 0 calcRems(25px);
     }
 }
@@ -95,7 +96,6 @@ p {
 a {
     color: $colorPurpleDk;
     font-weight: $boldWeight;
-    // transition: color 500ms ease;
 
     &.light {
         &,
@@ -119,7 +119,7 @@ ul {
 }
 
 li {
-    font-size: calcRems(16px);
+    font-size: calcRems(22px);
     font-weight: $extraLightWeight;
     padding: 0 0 calcRems(12px);
     
@@ -138,18 +138,18 @@ main {
 }
 
 
-
-
-
 // Transitions
-.fade-enter-from {
+.fade-enter-from, 
+.fade-leave-to {
     opacity: 0;
 }
 
-.fade-enter-to {
+.fade-enter-to,
+.fade-leave-from {
     opacity: 1;
 }
 
-.fade-enter-active {
-    transition: opacity 1s ease;
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .35s ease;
 }
