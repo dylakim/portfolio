@@ -2,13 +2,13 @@
     <section id="projects">
         <div class="description">
             <div>
-                <h1>Projects</h1>
-                <p>Below are working examples of a few of my recent projects. Most of the projects I work on are short-lived, due to the nature of promotional advertising. Some promotions may no longer be active.</p>
+                <h2>Projects</h2>
+                <p>Below are few examples of of my current or recent projects. due to the nature of promotional advertising, many of the projects I have worked on are short-lived.</p>
             </div>
         </div>
 
         <div id="projects__examples">
-            <Project
+            <ProjectDetail
                 v-for="(project, index) in projects"
                 :key="project.name"
                 :project-id="index"
@@ -19,18 +19,18 @@
                 <template v-slot:body>
                     <div v-html="project.body" />
                 </template>
-            </Project>
+            </ProjectDetail>
         </div>
     </section>
 </template>
 
 <script>
     import projects from '../data/projects.json';
-    import Project from './Project';
+    import ProjectDetail from './ProjectDetail';
 
     export default {
         components: {
-            Project,
+            ProjectDetail,
         },
 
         data () {
@@ -53,9 +53,14 @@
     .description {
         margin: 0 auto calcRems(40px);
         padding: calcRems(45px) calcRems(80px);
+        max-width: calcRems(720px);
 
         @include bp(desktop) {
-            padding: calcRems(50px) calcRems(200px);
+            padding: calcRems(20px) 0;
+        }
+
+        p {
+            padding: 0;
         }
     }
 

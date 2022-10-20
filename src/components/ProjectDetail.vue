@@ -1,29 +1,27 @@
 <template>
-    <!-- <router-link
+    <router-link
         :to="`/project/${projectId}`"
-        class="project"
-    > -->
-    <a
-        :href="details.url"
-        target="_blank"
-        class="project"
+        class="project-detail"
     >
-        <div class="project__preview">
+        <div
+            class="project-detail__preview"
+            :class="`${projectId}_preview`"
+        >
             <img
+                v-if="details.image"
                 :src="require(`@/assets/projects/${details.image}`)"
                 :alt="details.altText"
             />
         </div>
-        <section>
 
-            <div class="project__details">
+        <section>
+            <div class="project-detail__details">
                 <div>
-                    <h2><slot name="headline" /></h2>
+                    <h3><slot name="headline" /></h3>
                 </div>
             </div>
         </section>
-    </a>
-    <!-- </router-link> -->
+    </router-link>
 </template>
 
 <script>
@@ -50,11 +48,16 @@
 </script>
 
 <style lang="scss">
-.project {
+.project-detail {
     display: block;
     flex-basis: 48%;
     margin-bottom: calcRems(80px);
     text-decoration: none;
+    transition: all .3s ease;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
 
     &:last-of-type {
         align-self: center;
@@ -62,14 +65,15 @@
 
     &__preview {
         @include boxShadow();
-        border-radius: calcRems(3px);
+        border-radius: calcRems(5px);
+        height: calcRems(300px);
         margin-bottom: calcRems(30px);
         overflow: hidden;
         width: 100%;
 
         @include bp(desktop) {
             flex-shrink: 1;
-            height: calcRems(500px);
+            height: calcRems(250px);
             margin: 0;
         }
 
@@ -77,7 +81,18 @@
             display: block;
             width: 100%;
         }
-        
+
+        &.altria-fast-lane_preview,
+        &.admin-ui-library_preview {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 80%;
+                max-height: 80%;
+            }
+        }
     }
 
     &__details {

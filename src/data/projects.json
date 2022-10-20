@@ -1,30 +1,83 @@
 {
+    "altria-fast-lane": {
+        "altText": "Altria Logo",
+        "body": "Merkle has built loyalty programs for several of Altria's brands: Skoal, Copenhagen, and On! Nicotine. Altria has more brands that wish to have a loyalty program, as well. Each of these programs are nearly identical to each other, with the exception of the site branding. In order for Merkle to best serve Altria and all of it's brands moving forward, a component library is to be created which will streamline the development and maintenance process of building these loyalty programs. I have been an integral part in the discussions, planning, and scoping of the library and am the lead front end developer building the components.",
+        "headline": "Altria Loyalty Component Library",
+        "image": "altria.png",
+        "name": "Altria Loyalty Component Library",
+        "techList": ["Bitbucket", "Chai", "Markdown", "Mocha", "Git", "JavaScript", "Node.js", "NPM", "SCSS", "VSCode", "Vue.js", "Vue Test Utils"]
+    },
+    "admin-ui-library": {
+        "altText": "Ant Design Logo",
+        "body": "Merkle is in the process of upgrading their platform from Vue 2 to Vue 3. There are a few roadblocks that need to be addressed before that can happen. One of them is the admin tool's Buefy dependency. Buefy will not support Vue 3 which means the admin tool's UI library dependency needed to be replaced with one that does support it. Ant Design was chosen as the replacement that I, then, implemented.",
+        "externalLinks": [
+            {
+                "label": "Ant Design",
+                "type": "website",
+                "url": "https://antdv.com/"
+            }
+        ],
+        "headline": "Admin Tool UI Library Migration",
+        "image": "antd.svg",
+        "name": "Admin Tool UI Library Migration",
+        "techList": ["Ant Design", "Buefy", "Bulma", "CSS", "NPM", "Vue.js"]
+    },
+    "dunkin-at-home-extras": {
+        "altText": "Screenshot of the Dunkin Extras website",
+        "body": "Dunkin' At Home Extras is a rewards program for purchasing Dunkin' Coffee products for use at home. Users can upload their grocery receipts and earn points for their Dunkin' purchases. Points can be redeemed for Dunkin' gift cards. I was the lead front end developer on the cross-discipline team that built this program.",
+        "externalLinks": [
+            {
+                "type": "website",
+                "url": "https://www.dunkinextras.com/"
+            }
+        ],
+        "headline": "Dunkin' At Home Extras Loyalty Program",
+        "image": "dunkinextras.png",
+        "name": "Dunkin' At Home Extras Loyalty Program",
+        "techList": ["Axios", "Bitbucket", "FontAwesome", "Git", "GSAP", "JavaScript", "JSON", "Node.js", "NPM", "SlickSlider", "SCSS", "VSCode", "Vue.js", "YML"]
+    },
+    "altria-loyalty-programs": {
+        "altText": "Screenshot of the Skoal Loyalty site",
+        "body": "The team I am on at Merkle is responsible for building loyalty programs for Altria's biggest brands. The goal of the programs is to drive comsumer engagement and retention with the individual brands. Consumers can enter codes found on purchased products to earn punchcard punches. They earn rewards by purchasing enough products to fill up a punchcard. I was the lead senior front end developer on these programs. Currently live programs include Skoal, Copenhagen, and On! Nicotine. *You must have an account to view these programs.",
+        "externalLinks": [
+            {
+                "label": "View Skoal Rewards",
+                "type": "website",
+                "url": "https://www.skoal.com/rewards/"
+            },
+            {
+                "label": "View Copenhagen Rewards",
+                "type": "website",
+                "url": "https://www.freshcope.com/rewards/"
+            },
+            {
+                "label": "View On! Nicotine Rewards",
+                "type": "website",
+                "url": "https://www.onnicotine.com/rewards/"
+            }
+        ],
+        "headline": "Altria Loyalty Programs",
+        "image": "skoal-rewards.png",
+        "name": "Altria Loyalty Programs",
+        "techList": ["Axios", "Bitbucket", "FontAwesome", "Git", "JavaScript", "JSON", "Node.js", "NPM", "SlickSlider", "SCSS", "VSCode", "Vue.js", "YML"]
+    },
     "dyla-home-page": {
-        "name": "Dyla Home Page",
-        "url": "https://dyla.dev/",
-        "image": "dyla_home_page.png",
         "altText": "Dyla home page screenshot",
-        "headline": "Dyla Home Page"
-    },
-    "chobani-rewards-2021": {
-        "name": "Choabni Rewards",
-        "url": "https://www.chobanirewards.com/",
-        "image": "chobani_rewards2021.jpg",
-        "altText": "Chobani Rewards website screenshot",
-        "headline": "Chobani Rewards"
-    },
-    "sony-perfect-pair": {
-        "name": "The Perfect Pair",
-        "url": "https://sonyrewards.promo.eprize.com/theperfectpair/",
-        "image": "sonyrewards_theperfectpair.jpg",
-        "altText": "Sony Rewards: The Perfect Pair website screenshot",
-        "headline": "Sony Rewards: The Perfect Pair"
-    },
-    "togetherness-games": {
-        "name": "Nabisco Togetherness Games",
-        "url": "http://togethernessgames.com",
-        "image": "mondelez_togethernessgames.png",
-        "altText": "Togetherness Games website screenshot",
-        "headline": "Nabisco Togetherness Games"
+        "body": "Both my husband and I have subdomains on dyla.com. We needed a site at the domain because that'd be super weird if you went to dyla.com from kim.dyla.com and nothing was there. So, I built a little splash page that highlights some of our favorite things. There are pictures from our favorite vacations and a rotating random cocktail picker. Some cool ideas we have for the future are a family Strava stats display, since we're both pretty active, or a feed of our untapped beer rankings (although, that would mean we would actually have to remember to use it 😄).",
+        "externalLinks": [
+            {
+                "label": "dyla.dev",
+                "type": "website",
+                "url": "https://dyla.dev/"
+            },
+            {
+                "type": "github",
+                "url": "https://github.com/dylakim/dyla-home"
+            }
+        ],
+        "headline": "Dyla Home Page",
+        "image": "dyla-dev.png",
+        "name": "Dyla Home Page",
+        "techList": ["Axios", "TheCocktailDB", "Firebase", "FontAwesome", "Git", "JavaScript", "JSON", "NPM", "SCSS", "SlickSlider", "VSCode", "Vue.js"]        
     }
 }

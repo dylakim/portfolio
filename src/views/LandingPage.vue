@@ -1,7 +1,7 @@
 <template>
   <div>
     <AboutMe />
-    <!-- <Projects /> -->
+    <ProjectsList />
     <ClientsList />
     <TheFooter />
   </div>
@@ -11,14 +11,14 @@
   import AboutMe from '../components/AboutMe';
   import ClientsList from '../components/ClientsList';
   import TheFooter from '../components/TheFooter';
-  // import Projects from '../components/Projects';
+  import ProjectsList from '../components/ProjectsList';
 
   export default {
     components: {
       AboutMe,
       ClientsList,
       TheFooter,
-      // Projects,
+      ProjectsList,
     },
   }
 </script>

@@ -3,21 +3,24 @@
         <div class="description">
             <div>
                 <h1>Front End Web Developer</h1>
-                <p><font-awesome-icon :icon="faMapMarkerAlt" /> Troy, MI or Remote</p>
-                <p>I am a Senior Interface Developer at Merkle. I use technologies such as HTML, SCSS, JavaScript, and Vue.js to build fully responsive and accessible promotional websites.</p>
-                <p>I am a well organized, quick learning, and detail oriented developer. Documentation and note taking is very important to me. I have great time management skills and I'm always looking for ways to improve myself, my skills, and my processes. I enjoy working in a setting where I can both learn from and provide guidence to my teammates.</p>
+
+                <p>I am a Senior Interface Developer and Platform Tech Lead at Merkle where I have built many responsive and accessible promotional sites at a rapid pace over the last 7 years.</p>
+                
+                <p>Now I'm looking for my next challenge. I would love an opportunity to work with a product where, with modern frontend technology, I can build and maintain reusable and scalable components or applications. I love building something once and using it anywhere which is no surprise considering my organized mind, focus on efficiency, and priority to make others lives easier (and mine 😜).</p>
+
+                <p>If you would like to connect, get in touch over on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a>!</p>
             </div>
         </div>
 
         <div id="skills">
             <section>
                 <font-awesome-icon :icon="faCode" />
-                <h2>Languages</h2>
+                <h2>Technology</h2>
                 <ul>
+                    <li>Vue.js</li>
                     <li>Javascript</li>
                     <li>HTML</li>
                     <li>CSS/SCSS</li>
-                    <li>Vue.js</li>
                 </ul>
             </section>
 
@@ -80,13 +83,13 @@
         background: $colorPurpleDk;
         padding: calcRems(60px) calcRems(80px) calcRems(140px);
 
-        h1, p {
+        h1, p, a {
             color: $colorWhite;
         }
 
         & > div {
             margin: auto;
-            max-width: calcRems(765px);
+            max-width: calcRems(720px);
         }
 
         .fa-map-marker-alt {
@@ -127,6 +130,10 @@
                     flex-basis: 100%;
                     margin-top: calcRems(20px);
                 }
+            }
+
+            h2 {
+                @extend h3;
             }
 
             svg {
