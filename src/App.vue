@@ -4,11 +4,10 @@
       <div class="logo">Kim Dyla</div>
       <SocialLinks />
     </header>
-    
 
     <main>
       <router-view v-slot="{ Component }">
-          <Transition name="fade">
+          <Transition name="fade" mode="out-in">
               <component :is="Component" />
           </Transition>
       </router-view>

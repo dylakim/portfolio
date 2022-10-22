@@ -96,10 +96,10 @@
 
 <style lang="scss">
 .project-page {
-    margin: calcRems(60px) calcRems(40px);
+    margin: calcRems(40px);
 
     @include bp(desktop) {
-        margin: calcRems(80px) auto;
+        margin: calcRems(40px) auto;
         width: calcRems(920px);
     }
 
@@ -140,13 +140,18 @@
             border-radius: calcRems(20px);
             color: $colorWhite;
             display: inline-block;
+            font-size: calcRems(20px);
             padding: calcRems(6px) calcRems(19px);
             text-decoration: none;
+
+            @include bp(desktop) {
+                font-size: calcRems(12px);
+            }
         }
     }
 
     .project {
-        margin-top: calcRems(60px);
+        margin-top: calcRems(40px);
         text-align: left;
 
         @include bp(desktop) {
@@ -176,8 +181,12 @@
                 margin-bottom: calcRems(10px);
 
                 a {
-                    font-size: calcRems(16px);
+                    font-size: calcRems(22px);
                     text-decoration: none;
+
+                    @include bp(desktop) {
+                        font-size: calcRems(16px);
+                    }
                 }
             }
         }
@@ -190,6 +199,11 @@
                 margin-bottom: calcRems(10px);
                 margin-inline-end: calcRems(10px);
                 padding: calcRems(2px) calcRems(12px);
+
+                @include bp(mobile) {
+                    font-size: calcRems(26px);
+                    margin-bottom: calcRems(15px);
+                }
             }
         }
     }

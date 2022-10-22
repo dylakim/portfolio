@@ -81,10 +81,18 @@
 
     .description {
         background: $colorPurpleDk;
-        padding: calcRems(60px) calcRems(80px) calcRems(140px);
+        padding: calcRems(80px) calcRems(40px) calcRems(200px);
+
+        @include bp(desktop) {
+            padding: calcRems(60px) calcRems(80px) calcRems(140px);
+        }
 
         h1, p, a {
             color: $colorWhite;
+        }
+
+        p:last-child {
+            padding: 0;
         }
 
         & > div {
@@ -102,7 +110,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: calcRems(-75px) auto calcRems(40px);
+        margin: calcRems(-140px) auto calcRems(40px);
         padding: 0 calcRems(40px);
         
         @include bp(desktop) {
@@ -118,11 +126,11 @@
             @include boxShadow();
             box-sizing: border-box;
             flex-basis: calcRems(270px);
-            padding: calcRems(30px) 0;
+            padding: calcRems(40px) 0 calcRems(50px);
             
             @include bp(desktop) {
                 flex-basis: calcRems(286px);
-                padding: calcRems(35px) 0 calcRems(50px);
+                padding-top: calcRems(35px);
             }
 
             &:last-of-type {
@@ -134,12 +142,17 @@
 
             h2 {
                 @extend h3;
+
+                @include bp(mobile) {
+                    font-size: calcRems(28px);
+                    padding-bottom: calcRems(25px);
+                }
             }
 
             svg {
                 color: $colorPurpleDk;
-                font-size: calcRems(28px);
-                margin-bottom: calcRems(15px);
+                font-size: calcRems(32px);
+                margin-bottom: calcRems(25px);
                 
                 @include bp(desktop) {
                     font-size: calcRems(38px);
