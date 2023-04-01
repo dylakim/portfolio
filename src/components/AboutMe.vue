@@ -4,9 +4,9 @@
             <div>
                 <h1>Front End Web Developer</h1>
 
-                <p>I am a Senior Interface Developer and Platform Tech Lead at Merkle where I have built many responsive and accessible promotional sites at a rapid pace over the last 7 years.</p>
+                <p>I am a Senior Promotions Front End Developer at Merkle where I have built hundreds of responsive and accessible promotional sites over the last 8 years.</p>
                 
-                <p>Now I'm looking for my next challenge. I would love an opportunity to work with a product where, with modern frontend technology, I can build and maintain reusable and scalable components or applications. I love building something once and using it anywhere which is no surprise considering my organized mind, focus on efficiency, and priority to make others lives easier (and mine 😜).</p>
+                <p>I would love an opportunity to work with a product where, with modern frontend technology, I can be part of a team that builds and maintains reusable and scalable components and applications. I love building something once and using it anywhere which is no surprise considering my organized mind, focus on efficiency, and priority to make others lives easier (and mine 😜).</p>
 
                 <p>If you would like to connect, get in touch over on <a href="https://www.linkedin.com/in/dylakim" target="_blank">LinkedIn</a>!</p>
             </div>
